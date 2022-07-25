@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&family=Neucha&family=Poppins:ital,wght@1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.logo {
+    font-family: 'Neucha', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-left: 4vw;
+    color: rgb(121, 18, 121);
+}
+
+nav {
+    height: 5rem;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-bars {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.fa-bars:hover {
+    font-size: 2.8rem;
+    color: magenta;
+}
+
+
+.fa-bars {
+    font-size: 2.4rem;
+    margin-right: 2vw;
+    color: rgb(174, 0, 174);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+    position: fixed;
+    top: 5rem;
+    width: 40vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.896);
+    border-radius: 0 40px 10px 0;
+    left: -100%;
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: 999;
+}
+
+nav ul li {
+    margin: 2rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    letter-spacing: 5px;
+    padding: 10px;
+    border-bottom: 2px #fff solid;
+}
+
+nav ul i {
+    color: #fff;
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.activeNav ul {
+    left: 0;
+    opacity: 1;
+}
+
+.mainbody {
+    transition: all 1s;
+}
+
+.mainbody::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .6;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #c262af;
+    font-weight: 900;
+    text-align: center;
+    padding: 80px 0;
+    letter-spacing: .2rem;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sfd {
+    width: 90vw;
+    height: auto;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sfd_box {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 30px;
+    padding-bottom: 50px;
+    -webkit-box-shadow: 4px 0px 24px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0px 24px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 0px 24px -10px rgba(0, 0, 0, 0.75);
+    margin: 0 10px;
+}
+
+.sfd_box img {
+    width: 100%;
+}
+
+.sfd_box span {
+    font-weight: 300;
+    font-size: 1.7rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sfd_box p {
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sfd_box .learnmore {
+    font-size: 1.2rem;
+    color: rgb(178, 19, 178);
+    font-weight: 600;
+    padding: 30px 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.sfd_box .learnmore:hover {
+    color: rgb(245, 30, 245);
+}
+
+.box_2 img {
+    width: 100%;
+}
+
+.box_2 {
+    margin-top: 200px;
+}
+
+.box_3 img {
+    width: 100%;
+}
+
+.imgInfo {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(46, 46, 46);
+    padding-bottom: 30px;
+}
+
+.imgInfo span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #252525;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#footer span {
+    text-align: center;
+    font-size: .9rem;
+    color: rgb(227, 227, 227);
+}
+.Cinfo span{
+    font-size:2rem;
+    cursor: pointer;
+}
+.Cinfo{
+    font-size: 1rem;
+    color: #fff;
+    margin: 20px 0;
+}
+.copyright{
+    font-size: 1rem;
+    align-self: flex-start;
+    padding: 30px 20px;
+    color: #fff;
+}
+.copyright a{
+    font-size: 1.4rem;
+    color: orangered;
+    text-decoration: underline;
+}
+@media screen and (max-width:800px) {
+    .sfd {
+        flex-direction: column;
+    }
+    .box_2 {
+        margin-top: 0px;
+    }
+    .sfd_box{
+        margin: 20px 0px;
+    }
+    .sfd_box {
+        width: 90vw;
+    }
+    #footer .footertext{
+        padding: 0 20px;
+    }
+    .Cinfo {
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:460px) {
+    .heading {
+        font-size: 10vw;
+        padding: 20vw 0;
+    }
+    .copyright {
+        align-self: flex-start;
+        padding: 0 0 0 20px;
+        text-align: center;
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width:515px) {
+    #footer {
+        height: 301px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:800px) {
+    nav ul{
+        width: 80vw;
+    }
+}
